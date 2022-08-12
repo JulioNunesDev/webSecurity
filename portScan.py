@@ -6,7 +6,7 @@ for port in ports:
     client.settimeout(0.2)
     code = client.connect_ex(("bancocn.com", port))
     if code == 0:
-        print("porta aberta")
+        print(port, "porta aberta")
     else:
-        print("porta fechada")
+        print(port, "porta fechada")
 
